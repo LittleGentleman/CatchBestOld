@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:gmm="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    tools:context="com.phone.fuxi.catchbest.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/content_main"
+            android:id="@+id/include" />
+
+
+
+        <com.view.MenuButton
+            android:id="@+id/btn_menu"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="40dp"
+            android:visibility="visible"
+            android:layout_marginLeft="40dp"/>
+
+
+        <com.view.SwitchButton
+            android:id="@+id/sb_switch"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="40dp"
+            gmm:current_status="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_fps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/sb_switch"
+            android:text="fps:0.0"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:textSize="18sp"
+            android:textColor="#ff0000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/btn_start_stop"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="top|right"
+                android:text="停止"
+                android:layout_marginRight="20dp"
+                />
+
+            <Button
+                android:id="@+id/btn_catch_bitmap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="抓图"
+                android:layout_marginRight="20dp"/>
+
+            <Button
+                android:id="@+id/btn_gain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通道"
+                />
+
+            <Button
+                android:id="@+id/btn_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bayer模式"
+                android:layout_marginLeft="20dp"/>
+
+            <Button
+                android:id="@+id/btn_exposure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="曝光"
+                android:layout_marginLeft="20dp"/>
+
+            <Button
+                android:id="@+id/btn_white_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="白平衡"
+                android:layout_marginLeft="20dp"/>
+
+            <Button
+                android:id="@+id/btn_trigger_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="触发模式"
+                android:layout_marginLeft="20dp"/>
+
+            <CheckBox
+                android:id="@+id/cb_mirror"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="镜像"
+                android:layout_marginLeft="20dp"
+                android:checked="false"
+                android:background="#ddd"
+                android:padding="10dp"/>
+
+            <Button
+                android:id="@+id/btn_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="视场"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:scrollbarThumbVertical="@android:color/transparent"
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start|bottom">
+
+        <LinearLayout
+            android:id="@+id/left_drawer"
+            android:orientation="vertical"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:divider="@android:color/transparent"
+            android:background="@android:color/transparent">
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,3 @@
+/home/fuxi/AndroidStudioProjects/CatchBest/app/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/rebuild_cache.dir
+/home/fuxi/AndroidStudioProjects/CatchBest/app/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/edit_cache.dir
+/home/fuxi/AndroidStudioProjects/CatchBest/app/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/native-lib.dir

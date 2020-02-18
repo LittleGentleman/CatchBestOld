@@ -1,0 +1,41 @@
+SUPPORTED_64_BIT_ABIS=[Ljava.lang.String;@386ebab
+versionCode=1
+BOARD=msm8953
+BOOTLOADER=unknown
+TYPE=user
+ID=NMF26F
+TIME=1515603325000
+BRAND=Xiaomi
+TAG=Build
+HARDWARE=qcom
+SERIAL=d9d6ac3
+SUPPORTED_ABIS=[Ljava.lang.String;@d82a208
+CPU_ABI=arm64-v8a
+IS_DEBUGGABLE=false
+RADIO=unknown
+MANUFACTURER=Xiaomi
+IS_EMULATOR=false
+SUPPORTED_32_BIT_ABIS=[Ljava.lang.String;@39b99fa
+TAGS=release-keys
+CPU_ABI2=
+UNKNOWN=unknown
+PERMISSIONS_REVIEW_REQUIRED=false
+USER=builder
+FINGERPRINT=Xiaomi/oxygen/oxygen:7.1.1/NMF26F/8.1.11:user/release-keys
+HOST=c3-miui-ota-bd63.bj
+versionName=1.0
+PRODUCT=oxygen
+DISPLAY=NMF26F
+MODEL=MI MAX 2
+DEVICE=oxygen
+java.lang.NullPointerException: Attempt to read from field 'int com.catchbest.cam.m_devicecount' on a null object reference
+	at com.phone.fuxi.catchbest.MainActivity.onClick(MainActivity.java:396)
+	at android.view.View.performClick(View.java:5647)
+	at android.view.View$PerformClick.run(View.java:22462)
+	at android.os.Handler.handleCallback(Handler.java:754)
+	at android.os.Handler.dispatchMessage(Handler.java:95)
+	at android.os.Looper.loop(Looper.java:163)
+	at android.app.ActivityThread.main(ActivityThread.java:6372)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:901)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:791)
